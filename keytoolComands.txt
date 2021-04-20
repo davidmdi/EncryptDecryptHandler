@@ -1,0 +1,8 @@
+keytool -genkey -alias encrypt -keyalg RSA -keystore "C:\Users\david\Documents\keytool&certs\encrypt.jks"
+keytool -export -alias encrypt -file "C:\Users\david\Documents\keytool&certs\encrypt_cert.cer" -keystore "C:\Users\david\Documents\keytool&certs\encrypt.jks"
+keytool -genkey -alias decrypt -keyalg RSA -keystore "C:\Users\david\Documents\keytool&certs\decrypt.jks"
+keytool -export -alias decrypt -file "C:\Users\david\Documents\keytool&certs\decrypt_cert.cer" -keystore "C:\Users\david\Documents\keytool&certs\decrypt.jks"
+keytool -import -trustcacerts -file "decrypt_cert.cer" -alias decrypt -keystore "encrypt.jks"
+keytool -import -trustcacerts -file "encrypt_cert.cer" -alias encrypt -keystore "decrypt.jks"
+
+
