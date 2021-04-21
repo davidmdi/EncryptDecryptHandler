@@ -1,9 +1,9 @@
 # EncryptDecryptHandler
 
 ## Comments
-The execution is available from jdk version 14 
-To run program easy - double click on run.bat - (the command wrote in run.txt)
-After creating the keystores - the files were copied to the projects.
+- The execution is available from jdk version 14 
+- To run program easy - double click on run.bat - (the command wrote in run.txt)
+- After creating the keystores - the files were copied to the projects.
 
 ## Encryption
 The decryption program reads as input the encrypted.txt and conf.txt 
